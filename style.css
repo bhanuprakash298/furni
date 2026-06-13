@@ -1,95 +1,153 @@
-/* Body Styling */
-body {
-    background-color: #f0f8ff;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
 }
 
-/* Header */
-header {
-    background-color: black;
-    color: red;
-    text-align: center;
-    padding: 20px;
+body{
+    background:#0b0b14;
+    color:white;
 }
 
-/* Section Styling */
-section {
-    background-color: white;
-    margin: 20px;
-    padding: 20px;
-    border: 2px solid lightgray;
-    border-radius: 10px;
+/* Navbar */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#111;
 }
 
-/* Headings */
-h2 {
-    color: greenyellow;
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
 }
 
-/* Paragraph */
-p {
-    color: #333;
-    font-size: 18px;
+.logo img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
 }
 
-/* List */
-ul {
-    list-style-type: square;
+.logo h2{
+    color:#b7ff3c;
 }
 
-li {
-    color: green;
-    padding: 5px;
+nav ul{
+    display:flex;
+    list-style:none;
 }
 
-/* Table */
-table {
-    width: 100%;
-    border-collapse: collapse;
+nav ul li{
+    margin:0 15px;
 }
 
-th {
-    background-color: darkblue;
-    color: white;
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
 }
 
-th,
-td {
-    border: 1px solid black;
-    padding: 10px;
-    text-align: center;
+nav ul li a:hover{
+    color:#b7ff3c;
 }
 
-tr:nth-child(even) {
-    background-color: #e6f2ff;
+.btn{
+    text-decoration:none;
+    background:#b7ff3c;
+    color:black;
+    padding:12px 25px;
+    border-radius:30px;
+    font-weight:bold;
 }
 
-/* Form */
-input {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
+/* Hero Section */
+
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
 }
 
-button {
-    background-color: green;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
+.hero-content{
+    max-width:900px;
 }
 
-button:hover {
-    background-color: darkgreen;
+.tag{
+    display:inline-block;
+    background:#b7ff3c;
+    color:black;
+    padding:10px 20px;
+    border-radius:30px;
+    margin-bottom:20px;
+    font-weight:bold;
 }
 
-/* Footer */
-footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 15px;
+.hero-content h1{
+    font-size:65px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    color:#d0d0d0;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.hero-buttons{
+    margin-top:20px;
+}
+
+.btn2{
+    background:transparent;
+    color:#b7ff3c;
+    border:2px solid #b7ff3c;
+    margin-left:10px;
+}
+
+/* Services */
+
+.services{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.services h2{
+    color:#b7ff3c;
+    margin-bottom:40px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#161622;
+    padding:30px;
+    border-radius:15px;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#b7ff3c;
+    margin-bottom:15px;
+}
+
+footer{
+    background:#111;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
 }

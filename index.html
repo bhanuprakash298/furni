@@ -2,78 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HTML CSS Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Welcome to Stackly</h1>
-        <p>Learning HTML and CSS Basics</p>
-    </header>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <img src="https://i.ibb.co/6R6xrx4h/the-stackly-logo.jpg" alt="Stackly Logo">
+            <h2>Stackly</h2>
+        </div>
 
-    <section class="about">
-        <h2>About Us</h2>
-        <p>
-            Stackly is an information technology and software services company based in India. It focuses on custom software development, 
-            digital marketing, and web and mobile application design. 
-        </p>
-    </section>
-
-    <section class="services">
-        <h2>Our Courses</h2>
         <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Java</li>
-            <li>Spring Boot</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact Us</a></li>
         </ul>
+
+        <a href="#" class="btn">Contact Us</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+
+            <div class="tag">
+                What's New
+            </div>
+
+            <h1>
+                Building Strong & Impactful
+                <br>
+                Digital Presence
+            </h1>
+
+            <p>
+                Stackly creates modern websites, web applications,
+                and digital solutions that help businesses grow online.
+                We focus on innovation, performance, and user experience.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#" class="btn">Get Started</a>
+                <a href="#" class="btn btn2">Learn More</a>
+            </div>
+
+        </div>
     </section>
 
-    <section class="student-table">
-        <h2>Student Details</h2>
+    <!-- Services -->
+    <section class="services">
 
-        <table>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Course</th>
-            </tr>
+        <h2>Our Services</h2>
 
-            <tr>
-                <td>101</td>
-                <td>Bhanu</td>
-                <td>Java</td>
-            </tr>
+        <div class="cards">
 
-            <tr>
-                <td>102</td>
-                <td>Ravi</td>
-                <td>HTML & CSS</td>
-            </tr>
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>Professional websites for businesses and startups.</p>
+            </div>
 
-            <tr>
-                <td>103</td>
-                <td>Kiran</td>
-                <td>Spring Boot</td>
-            </tr>
-        </table>
+            <div class="card">
+                <h3>UI/UX Design</h3>
+                <p>Modern and attractive user interface designs.</p>
+            </div>
+
+            <div class="card">
+                <h3>Digital Marketing</h3>
+                <p>Grow your online presence and customer reach.</p>
+            </div>
+
+        </div>
+
     </section>
 
-    <section class="contact">
-        <h2>Contact Us</h2>
-
-        <form>
-            <label>Name:</label>
-            <input type="text" placeholder="Enter Name">
-
-            <label>Email:</label>
-            <input type="email" placeholder="Enter Email">
-
-            <button type="submit">Submit</button>
-        </form>
-    </section>
+    <footer>
+        <p>© 2026 Stackly. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
